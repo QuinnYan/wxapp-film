@@ -1,0 +1,95 @@
+/* pages/film_detail/film_detail.wxss */
+
+.movie-content {
+  padding: 20rpx 25rpx;
+  margin-bottom:30px;
+
+}
+
+.movie-content view {
+  margin: 25rpx 0;
+}
+
+.title {
+  font-size: 50rpx;
+  font-weight: bold;
+}
+
+.title2 {
+  font-size: 45rpx;
+  font-weight: bold;
+}
+
+.pubdate {
+  font-size: 33rpx;
+  color: #777;
+  font-style:italic;
+}
+
+.type {
+  font-size: 33rpx;
+  color: #777;
+  font-style:italic;
+}
+
+.summary {
+  font-size: 35rpx;
+  color: #555;
+  line-height: 1.5em;
+}
+
+.summary1{
+   font-weight: bold;
+}
+
+.tags {
+  margin-top: 40rpx;
+  overflow: hidden;
+}
+
+.tags text {
+  padding: 10rpx 12rpx;
+  border: 1px solid #ccc;
+  text-align: center;
+  float: left;
+  border-radius: 10px;
+  margin: 10rpx;
+  font-size: 26rpx;   
+}
+
+.fd_favorite{
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 0;
+  background: #fff;
+  width: 100%;
+  text-align: center;
+
+}
+
+
+.content:first-of-type{
+  border-top:1px solid #ccc;
+  height:68rpx;
+}
+
+.content image{
+  position: relative;
+  width: 45rpx;
+  height: 45rpx;
+  top:12rpx;
+  padding-right: 20rpx;
+
+}
+
+.content text{
+  position: relative;
+  top:6rpx;
+  font-size: 40rpx;
+}
+
+.fd_favorite_active image{
+  width: 50rpx;
+  height: 50rpx;
+
+}

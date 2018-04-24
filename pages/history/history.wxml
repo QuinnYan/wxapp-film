@@ -1,0 +1,11 @@
+<!--pages/history/history.wxml-->
+<import src="/common/template/list.wxml"/>
+
+<block wx:if="{{films.length}}">
+  <template is="movie-list" wx:if="{{films.length}}" data="{{films, loading }}"/>
+</block>
+<block wx:else>
+  <view style="text-align: center; padding: 30rpx 0; font-size: 30rpx; color: #666;">
+    <text>暂无数据</text>
+  </view>
+</block>

@@ -1,0 +1,6 @@
+<!--pages/share/share.wxml-->
+<image src="{{imgUrl}}" mode="aspectFit"  bindtap="share"></image>
+<view class="info">
+  <text>你喜欢这个小程序吗？点击并保存二维码分享给你的好友吧!</text>
+</view>
+

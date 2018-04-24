@@ -1,0 +1,30 @@
+<!--pages/user/user.wxml-->
+<view class="container">
+  <view class="user_info">
+    <image class="avatar" src="{{avatarUrl}}"></image>
+    <view class="name">
+            {{nickName}}
+            <block wx:if="{{gender == 0}}">
+                <view class="user_sex_male">男</view>
+            </block>
+            <block wx:elif="{{gender == 1}}">
+                <view class="user_sex_female">女</view>
+            </block>
+    </view>
+  </view>
+
+  <view class="functions">
+    <block class="functionWrapper" wx:for="{{funcList}}" wx:for-item="funcItem" wx-forindex="funcIndex" wx:key="function">
+      <view class="function" bindtap="funcDetail" data-url="{{funcItem.enName}}">
+        <image src="/assets/image/{{funcItem.enName}}.png" mode="aspectFit"></image>
+        <view class="func_title">{{funcItem.zhName}}</view>
+      </view>
+    </block>
+  </view>
+
+  <view class="share" bindtap="gotoShare">
+    <text>二维码分享</text>
+    <image src="/assets/image/more.png" mode="aspectFit"></image>
+  </view>
+
+</view>

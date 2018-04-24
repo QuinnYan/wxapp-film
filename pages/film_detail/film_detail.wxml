@@ -1,0 +1,31 @@
+<!--pages/film_detail/film_detail.wxml-->
+<view class="container">
+  <video style="width: 100%;" poster="{{films.cover}}" src="{{films.video}}" controls />
+  <view class="movie-content">
+    <view class="title">
+      <text>{{films.title}}</text>
+      <text class="title2">({{films.raw_title}})</text>
+    </view>
+    <view class="type">
+      <text>豆瓣评分：{{films.rate}}分 / 类型：{{films.types}}</text>
+    </view>
+    <view class="pubdate">
+      上映时间: {{films.pubdate}} 
+    </view>
+    <view class="tags">
+      <text wx:for="{{films.tags}}" wx:key="{{index}}">{{item}}</text>
+    </view>
+    <view class="summary">
+      <text class="summary1">电影简介：</text>
+      <text>{{films.summary}}</text>
+    </view>    
+  </view>
+</view>
+
+<view class="fd_favorite" bindtap="favoriteFilm">
+<view class="content">
+<image wx:if="{{collected}}" src="/assets/image/favorites-filling.png" mode="aspectFit"></image>
+<image wx:else src="/assets/image/addfavorite.png" mode="aspectFit"></image>
+<text>收藏</text>
+</view>
+</view>

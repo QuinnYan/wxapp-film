@@ -1,0 +1,3 @@
+/* pages/favorite/favorite.wxss */
+
+@import "/common/style/list.wxss";

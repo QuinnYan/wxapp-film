@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/subject/subject",
+    "pages/user/user",
+    "pages/film_detail/film_detail",
+    "pages/share/share",
+    "pages/favorite/favorite",
+    "pages/history/history",
+    "pages/subject-list/subject-list"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#20b2aa",
+    "navigationBarTextStyle": "bold",
+    "navigationBarTitleText": "豆瓣电影预告片汇总",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/assets/image/index.png",
+        "selectedIconPath": "/assets/image/index_active.png"
+      },
+      {
+        "pagePath": "pages/subject/subject",
+        "text": "分类",
+        "iconPath": "assets/image/subject.png",
+        "selectedIconPath": "assets/image/subject-active.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "/assets/image/user.png",
+        "selectedIconPath": "/assets/image/user_active.png"
+      }
+    ]
+  }
+}

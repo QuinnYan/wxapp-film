@@ -1,0 +1,27 @@
+<!--pages/favorite/favorite.wxml-->
+
+<block wx:if="{{films.length}}">
+<scroll-view scroll-y="true" style="height: 100%;" lower-threshold="300" bindscrolltolower="scrollHandler">
+  <view class='list' wx:for="{{films}}" wx:key="index" wx:for-item="movieData">
+      <view class='film' wx:for="{{movieData}}" wx:if="{{item}}" wx:key="{{item._id}}" bindtap="gotoDetail" data-movie-data="{{item}}">
+      <image class='poster'  mode='widthFix' src='{{item.poster}}'></image>
+        <view class='title'>
+          <text>{{item.title}}  <text class='rate'>{{item.rate}}</text></text>
+        </view>
+        <view class='types'>
+          <text>{{item.types}}/{{item.pubdate}}</text>
+        </view>
+      </view>
+    </view>
+  
+    
+    <view class="loading" wx:if="{{loading}}">
+        <image src="/assets/load.svg"></image>
+    </view> 
+  </scroll-view>
+</block>
+<block wx:else>
+  <view style="text-align: center; padding: 30rpx 0; font-size: 30rpx; color: #666;">
+    <text>暂无数据!</text>
+  </view>
+</block>
